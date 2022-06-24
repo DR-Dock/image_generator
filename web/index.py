@@ -1,11 +1,6 @@
 from flask import render_template, request, jsonify
 from flask import Flask
-import numpy as np
-import base64
-from io import BytesIO
-from keras.models import load_model
 import matplotlib
-import matplotlib.pyplot as plt
 import requests
 matplotlib.use('Agg')
 
