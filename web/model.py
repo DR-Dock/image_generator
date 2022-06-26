@@ -3,7 +3,6 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from keras.models import load_model
 import numpy as np
-import unicorn
 from flask import Flask
 import base64
 from io import BytesIO
