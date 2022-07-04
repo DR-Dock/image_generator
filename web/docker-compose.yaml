@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  model:
+    build: model/
+    command: python ./model.py
+    ports:
+      - 5000:5000
+  front:
+    build: front/
+    command: python ./index.py
+    network_mode: host
+    ports:
+      - 5001:5001
+    depends_on:
+      - model

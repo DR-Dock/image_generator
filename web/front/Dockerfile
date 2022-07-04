@@ -3,6 +3,6 @@ RUN pip3 install --upgrade pip
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-CMD ["python", "./index.py"]
+#CMD ["python", "./index.py"]
 
 
